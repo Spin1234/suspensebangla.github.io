@@ -47,7 +47,7 @@
         font-size: 1.2rem;
       }
       .search {
-        display: none;
+        margin: 40px;
         padding: 20px;
       }
       input[type="text"] {
@@ -72,7 +72,7 @@
         justify-content: space-around;
         margin: auto;
         width: 90%;
-        margin-top: 100px;
+        margin-top: 50px;
       }
       .card {
         width: 250px;
@@ -134,7 +134,9 @@
         background-color: #f1f6fa;
         box-shadow: 0 0 10px;
       }
-
+      .msg{
+        margin-left: 5%;
+      }
       @media screen and (max-width: 768px) {
         .cards{
           display: flex;
@@ -161,7 +163,7 @@
           <li><a href="#">Comedy</a></li>
         </ul>
       </div> -->
-      <div class="search">
+<!--       <div class="search">
         <input
           type="text"
           name="search"
@@ -169,12 +171,30 @@
           placeholder="Search here..."
         />
         <button id="s-btn">Search</button>
-      </div>
+      </div> -->
     </nav>
 
     <div class="text">
       <center><h1>Listen to your favorite sunday suspense</h1></center>
     </div>
+
+    <center>
+    <div class="search">
+      <form id="search-form">
+      <input
+        type="text"
+        name="search"
+        id="Search"
+        placeholder="Search here..."
+        required
+      />
+      <button id="s-btn">Search</button>
+    </form>
+    </div>
+</center>
+    <div class="msg">
+    <h2 id="tag">All stories</h2>
+  </div>
 
 
     <div class="cards" id="cards-cont">
