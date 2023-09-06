@@ -1,4 +1,4 @@
-const api="AIzaSyDvcVMjXpVnR55euaLVvfwl8m6sJXVvvmA";
+const api="AIzaSyDACBqZsfscBxkBVmRdEv39ylmScAudtSY";
 
 
 let nextPageToken = "";
@@ -77,7 +77,8 @@ async function searchKey(nextPageToken){
     
 
     keyword = searchBox.value;
-    const url1 =  `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCmzj6hXrPZ_AwIZ8lgo-HuQ&maxResults=25&pageToken=${nextPageToken}&q=${keyword}&key=${api}`;
+    // const url1 =  `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCmzj6hXrPZ_AwIZ8lgo-HuQ&maxResults=25&pageToken=${nextPageToken}&q=${keyword}&key=${api}`;
+    const url1 =  `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&pageToken=${nextPageToken}&q=${keyword}&key=${api}`;
     const response = await fetch(url1);
     const data = await response.json();
 
