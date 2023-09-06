@@ -125,12 +125,14 @@ searchForm.addEventListener("submit", (e)=> {
     
     e.preventDefault();
     const cardsCont = document.getElementById("cards-cont");
+    document.getElementById("loadmore-search").style.display = "block";
+    document.getElementById("loadmore").style.display = "none";
     cardsCont.innerHTML = "";
     nextPageToken = "";
     searchKey(nextPageToken);
 })
 
-document.getElementById("loadmore").addEventListener("click", async(e)=>{
+document.getElementById("loadmore-search").addEventListener("click", async(e)=>{
     e.preventDefault();
     nextPageToken = await searchKey(nextPageToken1);
 })
