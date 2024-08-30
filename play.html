@@ -79,7 +79,8 @@
         document.getElementById("im").style.backgroundImage = `url(${img})`;
 
         
-        document.getElementById("youtube-audio").data-video = id;
+        document.getElementById('youtube-audio').setAttribute('data-video', id);
+
 
         // Now 'id' contains the value of the 'id' parameter from the URL
         // console.log(id);
