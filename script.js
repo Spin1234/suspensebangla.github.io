@@ -97,7 +97,7 @@ async function searchKey(nextPageToken){
         const template = document.getElementById("tem");
 
 
-        if (item1.snippet && item1.snippet.thumbnails && item1.snippet.thumbnails.medium && item1.snippet.thumbnails.medium.url && item1.id.videoId) {
+        if (item1.snippet && item1.snippet.thumbnails && item1.snippet.thumbnails.medium && item1.snippet.thumbnails.medium.url && item1.id.videoId && item1.snippet.channelId != "UCKOBQUK8D1aXMY1rIODJS1w") {
             
             const img = item1.snippet.thumbnails.medium.url;
             
