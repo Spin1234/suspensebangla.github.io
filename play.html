@@ -317,7 +317,7 @@ fetch("https://images" + ~~(Math.random() * 33) + "-focus-opensocial.googleuserc
         const audio_tag = document.getElementById('youtube');
         let audio_streams = {};
 
-        fetch(`https://images${~~(Math.random() * 33)}-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=${encodeURIComponent("https://www.youtube.com/watch?hl=en&v=" + id)}`)
+        fetch(`https://images${~~(Math.random() * 33)}-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=${encodeURIComponent("https://www.youtube.com/watch?hl=en&v="+id)}`)
             .then(response => {
                 if (response.ok) {
                     return response.text();
